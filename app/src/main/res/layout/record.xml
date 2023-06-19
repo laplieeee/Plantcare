@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00C1CDC1"
+    android:orientation="vertical"
+    android:padding="6dip">
+
+    <TextView
+        android:id="@+id/record_name"
+        style="@style/list_item"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dip"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:padding="0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:padding="0dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/ic_alarm_black_24dp" />
+
+            <TextView
+                android:id="@+id/record_time"
+                style="@style/list_item"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:padding="5dp"
+                android:textSize="14dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/ic_date_range_black_24dp" />
+
+            <TextView
+                android:id="@+id/record_date"
+                style="@style/list_item"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:padding="5dp"
+                android:textSize="14dip" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dip"
+            android:onClick="onEditClick"
+            android:padding="5dp"
+            android:src="@drawable/ic_edit_black_24dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="onDeleteClick"
+            android:padding="5dp"
+            android:src="@drawable/ic_delete_black_24dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
